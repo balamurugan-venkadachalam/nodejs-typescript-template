@@ -1,9 +1,9 @@
-import express from 'express';
+import express, {Application, Request, Response, NextFunction} from 'express';
 
-const app = express();
+const app: Application = express();
 
-app.get('/hello',(req, res) => {
+app.get('/hello',(req: Request, res: Response, next: NextFunction) => {
     res.send("Hello")
 });
 
-app.listen(3000)
+app.listen(3000, ()=>{console.log('Server running')});
