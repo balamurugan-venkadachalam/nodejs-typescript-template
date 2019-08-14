@@ -7,7 +7,7 @@
     "start": "node dist/app.js",
     "dev": "nodemon src/app.ts",
     "build": "tsc -p .",
-    "test": "mocha -r ts-node/register test/**/*.spec.ts"
+    "test": "mocha -r ts-node/register src/**/*.spec.ts"
   },
   "keywords": [],
   "author": "",
