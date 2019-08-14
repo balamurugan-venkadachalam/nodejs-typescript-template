@@ -23,3 +23,6 @@ app.delete("/book/:id", bookController.deleteBook);
 const server = app.listen(app.get("port"), () => {
     console.log("App is running on http://localhost:%d", app.get("port"));
   });
+
+// export our app
+export default app;
