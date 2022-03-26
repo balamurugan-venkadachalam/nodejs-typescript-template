@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Github Checkout') {
+        stage('build') {
             steps {
-                git 'https://github.com/balamurugan-venkadachalam/nodejs-typescript-template.git'
+                echo 'build started'
             }
         }
     }
