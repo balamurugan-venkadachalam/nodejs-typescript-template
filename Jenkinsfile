@@ -1,7 +1,7 @@
 pipeline {
     agent any
-    
-    enviroment{
+
+    environment {
         PATH = "/home/bala/.nvm/versions/node/v16.9.1/bin/npm:"
     }
     
@@ -14,7 +14,7 @@ pipeline {
             }
         }
         
-        stage('build') {
+        stage('test') {
             steps {
                 echo 'test started'
                 sh "npm run test"
