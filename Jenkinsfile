@@ -7,13 +7,20 @@ pipeline {
     
     stages {
         
+        stage('npm install') {
+            steps {
+                echo 'npm install started'
+                sh "npm install"
+               
+            }
+        } 
         stage('build') {
             steps {
-                echo 'build started'
-                sh "npm install"
+                echo 'npm build started'
                 sh "npm run build"
+               
             }
-        }
+        }        
         
         stage('test') {
             steps {
